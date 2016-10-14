@@ -9,11 +9,7 @@ import java.util.Map;
 public interface VisitDao {
     void saveVisit(Student student, Lesson lesson);
 
-    Map<Lesson, Student> getListOfVisitsByLesson();
+    Map<Lesson, List<Student>> getListOfVisitsByLesson();
 
-    List<Student> getListOfVisitsByLesson(Lesson lesson);
-
-    Map<Student, Lesson> getListOfVisitsByStudent();
-
-    List<Lesson> getListOfVisitsByStudent(Student student);
+    Map<Student, List<Lesson>> getListOfVisitsByStudent();
 }

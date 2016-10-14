@@ -1,5 +1,5 @@
-INSERT INTO Students (id, name, department) VALUES (RANDOM_UUID(), 'Ivan Ivanov', 'risk');
-INSERT INTO Students (id, name, department) VALUES (RANDOM_UUID(), 'Petr Petrov', 'risk');
+INSERT INTO Students (id, name, department) VALUES (RANDOM_UUID(), 'Ivan Ivanov', '42');
+INSERT INTO Students (id, name, department) VALUES (RANDOM_UUID(), 'Petr Petrov', '42');
 INSERT INTO Students (id, name, department) VALUES (RANDOM_UUID(), 'Vasiliy Sidorov', '42');
 
 

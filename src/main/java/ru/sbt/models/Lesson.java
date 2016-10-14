@@ -3,7 +3,7 @@ package ru.sbt.models;
 import java.util.Date;
 import java.util.UUID;
 
-public class Lesson {
+public class Lesson implements Comparable<Lesson> {
     private final UUID id;
     private final Date date;
     private final String subject;
@@ -28,5 +28,19 @@ public class Lesson {
 
     public String getSubject() {
         return subject;
+    }
+
+    @Override
+    public String toString() {
+        return "Lesson{" +
+                "id=" + id +
+                ", date=" + date +
+                ", subject='" + subject + '\'' +
+                '}';
+    }
+
+    @Override
+    public int compareTo(Lesson o) {
+        return this.date.compareTo(o.date);
     }
 }
